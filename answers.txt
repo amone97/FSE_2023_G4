@@ -1,0 +1,43 @@
+1. 
+sudo apt-get install figlet
+figlet hello ubuntu
+sudo apt remove figlet
+
+2.
+for i in {1..10}; do touch file$i.txt; done
+
+3.
+ls -l
+ls -l > ~/contents.txt
+
+4.
+cd /usr/share
+find /usr/share -name "test" -type f | wc -l
+
+5.
+cd /etc
+sort /etc/passwd -o ~/foo.txt 2> ~/err.txt
+
+6.
+mkdir Box
+chmod g+wxs,o+t Box
+
+7.
+find . -maxdepth 1 -type f -name "*.txt" | wc -w
+
+8.
+find . -type f -name "00221*.txt" | wc -w
+
+9.
+find . -type f -name "*.txt" -exec wc -w {} +
+
+10.
+du -h --max-depth=1 / | sort -r
+
+11.
+sudo du -h --max-depth=1 --exclude=/sys / | sort -r | head -n 1
+
+12.
+
+
+
